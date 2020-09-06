@@ -1,0 +1,237 @@
+$primary-color: #808080; 
+$primary-color-lighter: lighten($primary-color, 20%);
+$text-color: #000000;
+
+
+.header{
+ display: flex;
+ justify-content: space-between;
+ background-color: $primary-color;
+ color: $text-color;
+}
+
+.navcontainer{
+  width: 100%;
+ display: block;
+ justify-content: space-between;
+ padding: 20px 15px;
+ margin-top: 20px;
+ text-decoration: none;
+ font-family: Arial;
+}
+
+
+.navlist{ 
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.navlistitem{
+  display: inline-block;
+  text-align: right;
+  margin-left: 10px;
+  color: text-color;
+}
+
+.logo{
+  position: center;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+h1{
+	font-size: 30px;
+  font-weight: 700;
+}
+  
+body{
+	font-family: 'san-serif', lato;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.6;
+	background-color: $primary-color-lighter;
+}
+
+.WorkGrid {
+  display: grid;
+  background-color: none; 
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 10px;
+  text-align: center;
+
+
+.WorkGrid > div{
+  background: #eee;
+  padding: 1em;
+
+
+
+.WorkGrid > div:nth-child(odd){
+  background: #ddd;
+
+
+.WorkGridItem{
+  border: 2px solid #092834;
+  padding: 10px;
+  font-size: 18px;
+  color: $text-color;
+}
+}
+}
+}
+
+
+h1{
+  text-align: center;
+}
+
+.footer{
+ list-style: none;
+ clear: both;
+ display: flex;
+ flex-direction: column;
+ flex: 1 1 100px;
+ text-align: center;
+ background-color: $primary-color;
+ color: $text-color;
+ list-style: none;
+
+}
+
+.footer>ul>li{
+  list-style: none;
+  display: inline;
+  margin: 0 10px;
+}
+
+#contact-form{
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  margin:0 auto;
+}
+
+.cv{
+  display: grid;
+  background-color: none; 
+  grid-template-columns: 1fr;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.About{
+  display: grid;
+}
+
+.AboutTable th {
+  text-align: right;
+  padding: 10px;
+}
+
+.AboutTable td {
+  text-align: center
+}
+
+a{
+	color: darkgreen;
+}
+
+a:visited{
+	/*visited link */
+	color: darkblue;
+}
+a:hover{
+	/*No underlining when hovering over a link*/
+  text-decoration: none;
+}
+a:active{
+	/*selected link*/
+	color: $text-color;
+}
+button:hover, button:focus 
+{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+
+.button, %button {
+  /* overwrites browser defaults */
+  /* resets the border */
+  border: none;
+  display: block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* style button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.9s opacity;
+}
+
+
+
+
+@media all and (max-width: 500px) {
+  .WorkGrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .WorkGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .WorkGrid {
+    grid-gap: 10px;
+  }
+  .WorkGridItem: last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+.circle{
+  animation: 4s color-change infinite alternate linear;
+}
+
+      
+
+
