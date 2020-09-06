@@ -15,6 +15,11 @@ $text-color: #000000;
  color: $text-color;
 }
 
+#introduction{
+  font-size: 16;
+  font-family: Arial;
+}
+
 .navcontainer{
   width: 100%;
  display: block;

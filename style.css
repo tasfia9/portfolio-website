@@ -87,6 +87,11 @@ h1{
   text-align: center;
 }
 
+#introduction{
+  font-size: 16;
+  font-family: Arial;
+}
+
 .footer{
  list-style: none;
  clear: both;
